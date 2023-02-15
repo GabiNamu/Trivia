@@ -1,5 +1,5 @@
 # Trivia
-Trivia is a question and answer game that was developed using react and redux, in a team with the support of a kanban board. This application is capable of:
+Trivia is a question and answer game developed using react and redux, in a team with the support of a kanban board. This application is capable of:
 
 - Log in to the game and, if the email is registered on the Gravatar website, have your photo associated with the user's profile;
 - Access the page referring to the game, where you must choose one of the available answers for each of the questions presented. The answer must be marked before the time counter reaches zero, otherwise the answer is considered wrong;
