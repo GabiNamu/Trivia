@@ -4,7 +4,7 @@ import renderWithRouterAndRedux from './helpers/renderWithRouterAndRedux';
 import userEvent from '@testing-library/user-event';
 import Feedback from '../pages/Feedback';
 
-describe('testa página de feedback', () => {
+describe('testa página de feedback ', () => {
     test('Verifica se ao clicar no botão "Play Again" a pessoa é redirecionada para a tela de início (login)', () => {
         const { history } = renderWithRouterAndRedux(<Feedback />);
         
