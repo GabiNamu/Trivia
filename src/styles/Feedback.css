@@ -8,7 +8,7 @@
 
 .feedback-content {
   align-items: center;
-  background: #fff;
+  background: white;
   border-radius: 10px;
   box-shadow: 1px 4px 13px 2px rgba(0, 0, 0, 0.2);
   color: #ea5d5d;
@@ -33,6 +33,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+  text-align: center;
 }
 
 .button-play-again {
