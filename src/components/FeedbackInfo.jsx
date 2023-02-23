@@ -9,12 +9,12 @@ class Feedback extends Component {
       <div className="feedback-sub-content">
         <div>
           <span data-testid="feedback-total-score">
-            { score }
+            { `You got ${score} questions right` }
           </span>
         </div>
         <div>
           <span data-testid="feedback-total-question">
-            { assertions }
+            { `Total ${assertions} points` }
           </span>
         </div>
       </div>

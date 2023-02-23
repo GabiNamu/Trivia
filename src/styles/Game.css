@@ -23,8 +23,14 @@
   background: white;
   border: 1px solid white;
   border-radius: 100px;
+  color: black;
   cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   height: 64px;
+  letter-spacing: 0.12em;
+  line-height: 150%;
   width: 519px;
 }
 
@@ -108,7 +114,7 @@
   line-height: 150%;
 }
 
-@media screen and ( max-width : 1024px ) {
+/* @media screen and ( max-width : 1024px ) {
 
   .game-question-container {
     align-items: center;
@@ -121,4 +127,4 @@
     justify-content: space-around;
     width: 439px;
   }
-}
+} */

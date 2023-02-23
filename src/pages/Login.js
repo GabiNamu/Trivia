@@ -67,12 +67,14 @@ class Login extends Component {
           />
           <Button
             testId="btn-play"
+            buttonClassCss="play"
             btnLabel="Play"
             isDisabled={ !(name.length > 0 && gravatarEmail.length > 0) }
             handleButton={ this.handleClick }
           />
           <Button
             testId="btn-settings"
+            buttonClassCss="Settings"
             btnLabel="Settings"
             handleButton={ () => history.push('/settings') }
           />

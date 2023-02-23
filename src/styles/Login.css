@@ -50,3 +50,9 @@
 .login button:first-of-type {
   background-color: #2fc18c;
 }
+
+.login button:first-of-type:disabled {
+  background-color: #0f3d2de1;
+  color: rgb(94, 93, 93);
+  cursor: auto;
+}
