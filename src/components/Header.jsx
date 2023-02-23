@@ -8,12 +8,13 @@ class Header extends Component {
     return (
       <div>
         <img
+          className="header-image"
           src={ gravatar }
           alt="Profile"
           data-testid="header-profile-picture"
         />
-        <p data-testid="header-player-name">{ name }</p>
-        <p data-testid="header-score">{ score }</p>
+        <p data-testid="header-player-name" className="header-content name">{ name }</p>
+        <p data-testid="header-score" className="header-content score">{ score }</p>
       </div>
     );
   }

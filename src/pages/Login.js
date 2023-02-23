@@ -8,6 +8,8 @@ import {
   ACTION_LOGIN_SAVED,
   ACTION_RESET_PLAYER,
 } from '../redux/actions/index';
+import logo from '../styles/img/logo.png';
+import '../styles/Login.css';
 
 class Login extends Component {
   state = {
@@ -40,37 +42,42 @@ class Login extends Component {
     const { name, gravatarEmail } = this.state;
     const { history } = this.props;
     return (
-      <>
-        <Input
-          type="text"
-          labelName="Nome: "
-          id="name"
-          testId="input-player-name"
-          placeholder="Digite seu nome"
-          value={ name }
-          handleInput={ this.handleChange }
-        />
-        <Input
-          type="email"
-          labelName="Email: "
-          id="gravatarEmail"
-          testId="input-gravatar-email"
-          placeholder="ada@lovelace.com"
-          value={ gravatarEmail }
-          handleInput={ this.handleChange }
-        />
-        <Button
-          testId="btn-play"
-          btnLabel="Play"
-          isDisabled={ !(name.length > 0 && gravatarEmail.length > 0) }
-          handleButton={ this.handleClick }
-        />
-        <Button
-          testId="btn-settings"
-          btnLabel="Settings"
-          handleButton={ () => history.push('/settings') }
-        />
-      </>
+      <div className="login-container">
+        <div className="login-logo">
+          <img src={ logo } alt="logo" />
+        </div>
+        <div className="login">
+          <Input
+            type="text"
+            labelName=""
+            id="name"
+            testId="input-player-name"
+            placeholder="Qual é o seu nome?"
+            value={ name }
+            handleInput={ this.handleChange }
+          />
+          <Input
+            type="email"
+            labelName=""
+            id="gravatarEmail"
+            testId="input-gravatar-email"
+            placeholder="Qual é o seu email do gravatar?"
+            value={ gravatarEmail }
+            handleInput={ this.handleChange }
+          />
+          <Button
+            testId="btn-play"
+            btnLabel="Play"
+            isDisabled={ !(name.length > 0 && gravatarEmail.length > 0) }
+            handleButton={ this.handleClick }
+          />
+          <Button
+            testId="btn-settings"
+            btnLabel="Settings"
+            handleButton={ () => history.push('/settings') }
+          />
+        </div>
+      </div>
     );
   }
 }

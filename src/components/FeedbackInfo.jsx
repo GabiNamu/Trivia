@@ -6,7 +6,7 @@ class Feedback extends Component {
   render() {
     const { score, assertions } = this.props;
     return (
-      <div>
+      <div className="feedback-sub-content">
         <div>
           <span data-testid="feedback-total-score">
             { score }
