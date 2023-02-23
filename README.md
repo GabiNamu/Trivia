@@ -7,6 +7,14 @@ Trivia is a question and answer game developed using react and redux, in a team 
 - View the ranking page, if you like, at the end of each game;
 - To set up some options for the game in a settings screen accessible from the app's header.
 
+<div align="center" display="inline">
+<img src="./src/images/login.png" alt="login" width="400px" height="250px">
+<img src="./src/images/game.png" alt="wallet" width="400px" height="250px">
+<img src="./src/images/game-end.png" alt="login" width="400px" heigth="450px">
+<img src="./src/images/feedback.png" alt="wallet" width="400px" heigth="450px">
+<img src="./src/images/ranking.png" alt="login" width="400px" heigth="450px">
+</div>
+
 ## How to use:
 - First clone the repository into your machine;
 
