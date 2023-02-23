@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import md5 from 'crypto-js/md5';
-import Header from '../components/Header';
 import fetchToken from '../helpers/fetch';
 import Button from '../components/Button';
 import { ACTION_INCREMENT_SCORE, ACTION_SAVE_GRAVATAR } from '../redux/actions';
+import '../styles/Game.css';
 
 const correctAnswerId = 'correct-answer';
 const three = 3;
@@ -148,29 +148,33 @@ class Game extends Component {
     } = this.state;
 
     return (
-      <div>
-        <Header />
-        <section>
+      <div className="game-container">
+        <section className="game-container-content">
           {
             questions.length > 0
               ? (
                 <>
-                  <h3
-                    data-testid="question-category"
-                  >
-                    {
-                      questions[questionIndex].category
-                    }
-                  </h3>
-                  <h3
-                    data-testid="question-text"
-                  >
-                    {
-                      questions[questionIndex].question
-                    }
-                  </h3>
-                  <div data-testId="timer">{timer}</div>
+                  <div className="game-question-container">
+                    <h3
+                      data-testid="question-category"
+                      className="game-question-category"
+                    >
+                      {
+                        questions[questionIndex].category
+                      }
+                    </h3>
+                    <h3
+                      className="game-question-text"
+                      data-testid="question-text"
+                    >
+                      {
+                        questions[questionIndex].question
+                      }
+                    </h3>
+                    <div data-testId="timer" className="timer">{`Time: ${timer}s`}</div>
+                  </div>
                   <section
+                    className="game-answer-container"
                     data-testid="answer-options"
                   >
                     {
@@ -189,11 +193,9 @@ class Game extends Component {
                               : `wrong-answer-${index}`
                           }
                           handleButton={ this.handleClickAnswer }
-                          buttonClassCss={
-                            each === correctAnswer
-                              ? correctClass
-                              : wrongClass
-                          }
+                          buttonClassCss={ `game-answer ${each === correctAnswer
+                            ? correctClass
+                            : wrongClass}` }
                           isDisabled={ this.handleTimer() }
                         />
                       ))
@@ -211,6 +213,7 @@ class Game extends Component {
               disabled={ false }
               handleButton={ this.handleNext }
               btnLabel="Next"
+              buttonClassCss="game-button"
             />)
           : ''}
       </div>

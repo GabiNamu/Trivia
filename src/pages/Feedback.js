@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import Header from '../components/Header';
 import FeedbackInfo from '../components/FeedbackInfo';
+import '../styles/Feedback.css';
 
 const three = 3;
 
@@ -12,24 +13,31 @@ class Feedbacks extends Component {
   render() {
     const { assertions } = this.props;
     return (
-      <div>
+      <div className="feedback-container">
         <Header />
-        <h1 data-testid="feedback-text">
-          {assertions < three ? 'Could be better...' : 'Well Done!'}
-        </h1>
-        <FeedbackInfo />
-        <Link to="/">
-          <Button
-            testId="btn-play-again"
-            btnLabel="Play Again"
-          />
-        </Link>
-        <Link to="/ranking">
-          <Button
-            testId="btn-ranking"
-            btnLabel="Ranking"
-          />
-        </Link>
+        <div className="feedback-content">
+          <h1 data-testid="feedback-text">
+            {assertions < three ? 'Could be better...' : 'Well Done!'}
+          </h1>
+          <FeedbackInfo />
+        </div>
+        <div className="feedback-button-container">
+          <Link to="/">
+            <Button
+              buttonClassCss="button-play-again"
+              testId="btn-play-again"
+              btnLabel="Play Again"
+            />
+          </Link>
+          <Link to="/ranking">
+            <Button
+              className="button-ranking"
+              testId="btn-ranking"
+              btnLabel="Ranking"
+              buttonClassCss="button-ranking"
+            />
+          </Link>
+        </div>
       </div>
     );
   }

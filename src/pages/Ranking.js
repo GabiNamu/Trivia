@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import RankCard from '../components/RankCard';
+import logo from '../styles/img/logo.png';
+import '../styles/Ranking.css';
 
 class Ranking extends Component {
   state = {
@@ -28,9 +30,13 @@ class Ranking extends Component {
       } } = this;
 
     return (
-      <div>
+      <div className="ranking-container">
+        <div className="ranking-logo">
+          <img src={ logo } alt="logo" />
+        </div>
         <h1
           data-testid="ranking-title"
+          className="ranking-title"
         >
           Ranking
         </h1>
@@ -55,6 +61,7 @@ class Ranking extends Component {
         </ol>
         <Link to="/">
           <Button
+            buttonClassCss="ranking-button"
             testId="btn-go-home"
             btnLabel="Inicio"
           />

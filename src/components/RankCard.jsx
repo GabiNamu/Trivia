@@ -14,21 +14,26 @@ class RankCard extends Component {
     } = this.props;
 
     return (
-      <li>
-        <p
-          data-testid={ nameTestId }
-        >
-          {name}
-        </p>
-        <p
-          data-testid={ scoreTestId }
-        >
-          {score}
-        </p>
-        <img
-          src={ `${gravatar}` }
-          alt={ `${name}'s foto` }
-        />
+      <li className="li-card-ranking">
+        <div className="li-card-ranking-container">
+          <img
+            className="li-card-ranking-image"
+            src={ `${gravatar}` }
+            alt={ `${name}'s foto` }
+          />
+          <p
+            data-testid={ nameTestId }
+          >
+            {name}
+          </p>
+        </div>
+        <div className="li-card-ranking-score">
+          <p
+            data-testid={ scoreTestId }
+          >
+            {`${score} points`}
+          </p>
+        </div>
       </li>
     );
   }
