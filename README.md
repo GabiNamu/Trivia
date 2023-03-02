@@ -15,18 +15,24 @@ Trivia is a question and answer game developed using react and redux, in a team 
 <img src="./src/images/ranking.png" alt="login" width="400px" heigth="450px">
 </div>
 
-## How to use:
+## Run locally:
 - First clone the repository into your machine;
 
 ```
- git clone git@github.com:GabiNamu/trybewallet.git
+git clone git@github.com:GabiNamu/trybewallet.git
 ```
-- After cloning, enter into the repository and install the dependencies;
+
+- Go to the project directory;
+```
+cd recipes
+```
+
+- Install dependencies;
 
 ```
 npm install
 ```
-- Then to see in your browser, you just need to do a npm start;
+- Start the server;
 ```
 npm start
 ```
@@ -38,10 +44,10 @@ npm start
 - Redux;
 - Css;
 
-## Contributors:
-This project was made with a team: 
- - Michelle Marquez;
- - Arthur Mucci;
- - Ricardo Pereira;
- - Vinicius Pozzatto;
- - George Henrique.
+## Authors:
+ - [@GabiNamu](https://www.github.com/GabiNamu)
+ - [@Mixchelle](https://www.github.com/Mixchelle)
+ - [@arturMucci](https://www.github.com/arturMucci)
+ - [@RicardoPBJ](https://www.github.com/RicardoPBJ)
+ - [@viniciuspozzatto](https://www.github.com/viniciuspozzatto)
+ - [@GeorgeHCSS](https://www.github.com/GeorgeHCSS)
