@@ -19,12 +19,12 @@ Trivia is a question and answer game developed using react and redux, in a team 
 - First clone the repository into your machine;
 
 ```
-git clone git@github.com:GabiNamu/trybewallet.git
+git clone git@github.com:GabiNamu/Trivia.git
 ```
 
 - Go to the project directory;
 ```
-cd recipes
+cd Trivia
 ```
 
 - Install dependencies;
