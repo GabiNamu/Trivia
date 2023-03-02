@@ -36,6 +36,14 @@ npm install
 ```
 npm start
 ```
+## Authors:
+ - [@GabiNamu](https://www.github.com/GabiNamu)
+ - [@Mixchelle](https://www.github.com/Mixchelle)
+ - [@arturMucci](https://www.github.com/arturMucci)
+ - [@RicardoPBJ](https://www.github.com/RicardoPBJ)
+ - [@viniciuspozzatto](https://www.github.com/viniciuspozzatto)
+ - [@GeorgeHCSS](https://www.github.com/GeorgeHCSS)
+
 ## Main technologies used:
 - React;
 - React Router;
@@ -44,10 +52,4 @@ npm start
 - Redux;
 - Css;
 
-## Authors:
- - [@GabiNamu](https://www.github.com/GabiNamu)
- - [@Mixchelle](https://www.github.com/Mixchelle)
- - [@arturMucci](https://www.github.com/arturMucci)
- - [@RicardoPBJ](https://www.github.com/RicardoPBJ)
- - [@viniciuspozzatto](https://www.github.com/viniciuspozzatto)
- - [@GeorgeHCSS](https://www.github.com/GeorgeHCSS)
+
