@@ -16,25 +16,30 @@ Trivia is a question and answer game developed using react and redux, in a team 
 </div>
 
 ## Run locally:
-- First clone the repository into your machine;
+- First clone the repository into your machine
 
 ```
 git clone git@github.com:GabiNamu/Trivia.git
 ```
 
-- Go to the project directory;
+- Go to the project directory
 ```
 cd Trivia
 ```
 
-- Install dependencies;
+- Install dependencies
 
 ```
 npm install
 ```
-- Start the server;
+- Start the server
 ```
 npm start
+```
+## Run the Tests:
+- Use the below command inside your project directory
+```
+npm test
 ```
 ## Authors:
  - [@GabiNamu](https://www.github.com/GabiNamu)
