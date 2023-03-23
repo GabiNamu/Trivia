@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import RankCard from '../components/RankCard';
-import logo from '../styles/img/logo.png';
+// import logo from '../styles/img/logo.png';
 import '../styles/Ranking.css';
 
 class Ranking extends Component {
@@ -31,9 +31,9 @@ class Ranking extends Component {
 
     return (
       <div className="ranking-container">
-        <div className="ranking-logo">
+        {/* <div className="ranking-logo">
           <img src={ logo } alt="logo" />
-        </div>
+        </div> */}
         <h1
           data-testid="ranking-title"
           className="ranking-title"

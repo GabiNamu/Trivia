@@ -114,17 +114,56 @@
   line-height: 150%;
 }
 
-/* @media screen and ( max-width : 1024px ) {
+@media screen and ( max-width : 1300px ) {
+
+  .game-container-content {
+    flex-direction: column;
+  }
+
+  .game-answer-container {
+    margin-top: -20px;
+  }
+
+  .game-answer {
+    height: 54px;
+    margin-right: 10px;
+  }
+
+  .game-button {
+    height: 40px;
+    margin-bottom: 40px;
+    margin-top: 680px;
+
+  }
+}
+
+@media screen and ( max-width : 550px ) {
+
+  .game-answer {
+    height: 54px;
+    margin-right: 10px;
+    width: 380px;
+  }
+
+  .game-button {
+    height: 35px;
+    margin-bottom: 40px;
+    margin-left: -390px;
+    margin-top: 680px;
+    width: 380px;
+  }
 
   .game-question-container {
-    align-items: center;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 1px 4px 13px 2px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex: row wrap;
-    height: 286px;
-    justify-content: space-around;
-    width: 439px;
+
+    /* margin-right: px; */
+    width: 349px;
   }
-} */
+
+  .game-answer-container {
+    margin-top: -20px;
+  }
+
+  .game-question-category {
+    width: 323px;
+  }
+}

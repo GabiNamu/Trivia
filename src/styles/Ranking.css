@@ -8,10 +8,12 @@
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  margin-top: 200px;
+  margin-bottom: 40px;
+  margin-top: 100px;
   min-height: 488px;
-  padding: 20px;
-  padding-top: 100px;
+  padding: 40px;
+
+  /* padding-top: 100px; */
   width: 489px;
 }
 
@@ -22,6 +24,7 @@
   font-weight: 700;
   letter-spacing: 0.12em;
   line-height: 150%;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -74,14 +77,28 @@
   height: 45px;
   letter-spacing: 0.12em;
   line-height: 150%;
+  margin-top: 10px;
   text-transform: uppercase;
   width: 386px;
 }
 
-.ranking-logo {
-  height: 178.76px;
-  margin-left: -90px;
-  margin-top: -710px;
+/* .ranking-logo {
+  margin-left: -30px;
+  margin-top: -700px;
   position: absolute;
-  width: 177.79px;
+} */
+
+@media screen and ( max-width : 530px ) {
+
+  .ranking-container {
+    width: 339px;
+  }
+
+  .ranking-button {
+    width: 266px;
+  }
+
+  .li-card-ranking-score {
+    width: 150px;
+  }
 }

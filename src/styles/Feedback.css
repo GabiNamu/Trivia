@@ -94,10 +94,35 @@
 }
 
 .name {
+  display: none;
   margin-left: 130px;
   margin-top: 10px;
 }
 
 .score {
+  display: none;
   margin-left: 145px;
+}
+
+@media screen and ( max-width : 490px ) {
+
+  .button-play-again {
+    width: 150px;
+  }
+
+  .button-ranking {
+    width: 150px;
+  }
+
+  .header-image {
+    height: 130px;
+    margin-left: -70px;
+    margin-top: -90px;
+    width: 130px;
+  }
+
+  .feedback-content {
+    font-size: 16px;
+    width: 300px;
+  }
 }

@@ -56,3 +56,10 @@
   color: rgb(94, 93, 93);
   cursor: auto;
 }
+
+@media screen and ( max-width : 600px ) {
+
+  .login {
+    width: 80%;
+  }
+}

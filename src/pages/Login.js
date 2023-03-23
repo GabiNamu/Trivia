@@ -11,6 +11,8 @@ import {
 import logo from '../styles/img/logo.png';
 import '../styles/Login.css';
 
+const regex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/gi;
+
 class Login extends Component {
   state = {
     name: '',
@@ -40,7 +42,6 @@ class Login extends Component {
 
   render() {
     const { name, gravatarEmail } = this.state;
-    const { history } = this.props;
     return (
       <div className="login-container">
         <div className="login-logo">
@@ -69,15 +70,15 @@ class Login extends Component {
             testId="btn-play"
             buttonClassCss="play"
             btnLabel="Play"
-            isDisabled={ !(name.length > 0 && gravatarEmail.length > 0) }
+            isDisabled={ !(name.length > 0 && regex.test(gravatarEmail)) }
             handleButton={ this.handleClick }
           />
-          <Button
+          {/* <Button
             testId="btn-settings"
             buttonClassCss="Settings"
             btnLabel="Settings"
             handleButton={ () => history.push('/settings') }
-          />
+          /> */}
         </div>
       </div>
     );
