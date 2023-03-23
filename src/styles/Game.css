@@ -167,3 +167,19 @@
     width: 323px;
   }
 }
+
+@media screen and ( max-width : 420px ) {
+
+  .game-answer {
+    height: 54px;
+    margin-right: 10px;
+    width: 350px;
+  }
+
+  .game-button {
+    height: 45px;
+    margin-bottom: 40px;
+    margin-left: -360px;
+    width: 350px;
+  }
+}
