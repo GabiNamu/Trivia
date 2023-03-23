@@ -8,8 +8,8 @@
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  margin-bottom: 40px;
-  margin-top: 100px;
+  margin-bottom: 150px;
+  margin-top: 200px;
   min-height: 488px;
   padding: 40px;
 
@@ -88,9 +88,20 @@
   position: absolute;
 } */
 
+@media screen and ( max-width : 821px ) {
+
+  .ranking-container {
+    margin-bottom: 400px;
+    margin-top: 300px;
+  }
+}
+
+
 @media screen and ( max-width : 530px ) {
 
   .ranking-container {
+    margin-bottom: 200px;
+    margin-top: 200px;
     width: 339px;
   }
 
